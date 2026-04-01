@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Doação sanguínea</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <h3>Cadastro da ONG</h3>
+        <form action="" id="formulario">
+
+            <label for="nome"> Nome completo:</label>
+            <input type="text" id="nome" placeholder="Nome">
+            <div id="erroNome" class="erro"></div>
+
+            <br> <br>
+
+            <label for="email"> Email: </label>
+            <input type="email" id="email" placeholder="Email">
+            <div id="erroEmail" class="erro"></div>
+
+            <br> <br>
+
+            <label for="telefone"> Telefone: </label>
+            <input type="tel" id="telefone" placeholder="Telefone">
+            <div id="erroTelefone" class="erro"></div>
+
+            <br> <br>
+
+            <label for="idade"> Sua idade: </label>
+            <input type="number" id="idade" placeholder="Idade">
+            <div id="erroIdade" class="erro"></div>
+
+            <br> <br>
+
+            <label for="cidade"> Cidade: </label>
+            <input type="text" id="cidade" placeholder="Cidade">
+            <div id="erroCidade" class="erro"></div>
+
+            <br> <br>
+
+            <label for="estado"> Estado: </label>
+            <input type="text" id="estado" placeholder="Estado">
+            <div id="erroEstado" class="erro"></div>
+
+            <br> <br>
+
+            <label for="peso"> Peso: </label>
+            <input type="number" id="peso" placeholder="Numero">
+            <div id="erroPeso" class="erro"></div>
+
+            <br> <br>
+
+            <label for="sangue"> Tipo sanguíneo: </label>
+            <select id="sangue">
+            <option value="selecione">Selecione</option>
+            <option value="sanguíneo">A+</option>
+            <option value="sanguíneo">A-</option>
+            <option value="sanguíneo">B+</option>
+            <option value="sanguíneo">B-</option>
+            <option value="sanguíneo">AB+</option>
+            <option value="sanguíneo">AB-</option>
+            <option value="sanguíneo">O+</option>
+            <option value="sanguíneo">O-</option>
+            </select>
+
+            <br> <br>
+
+</div>
+
+            <button type="submit" id="botao"> Enviar </button>
+
+        </form>
+
+        <div class="resultado" id="resultado"></div>
+
+         <img id="animais" src="assets/image/animais. png.png" alt="animais fofos, canto de tela">
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
