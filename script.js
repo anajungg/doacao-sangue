@@ -81,7 +81,7 @@ if (sangue === "selecione") {
 }
 
 if (valido) {
-
+ 
 let usuario = {
             nome: nome,
             email: email,
