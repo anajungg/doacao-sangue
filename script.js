@@ -25,6 +25,10 @@ if (nome.length < 7) {
     document.getElementById('erroNome').textContent = 'Nome deve ter pelo menos nome e sobrenome';
     valido = false;
 }
+ if(!nome.includes(" ")){
+document.getElementById('erroNome').textContent ='Deve conter pelo menos nome e sobrenome.';
+valido = false;
+}
 
 if (!email.includes('@')) {
 document.getElementById('erroEmail').textContent = 'Email Inválido, deve conter @.';
@@ -77,6 +81,7 @@ if (sangue === "selecione") {
 }
 
 if (valido) {
+
 let usuario = {
             nome: nome,
             email: email,
@@ -85,7 +90,7 @@ let usuario = {
             telefone: telefone,
             cidade: cidade,
             estado: estado,
-            tipoSanguineo: tipoSanguineo
+            sangue: sangue
         
         };
 
